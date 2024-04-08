@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+    <div class="container">
+        <div class="display">
+            <input type="text" placeholder="0" id="inp">
+        </div>
+    </div>
+
+     <div class="buttons">
+        <div class="buttons1">
+            <button onclick="clearInp()">AC</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="displayNum('.')">.</button>
+            <button>/</button>
+        </div>
+
+        <div class="buttons1">
+            <button onclick="displayNum(9)">9</button>
+            <button onclick="displayNum(8)">8</button>
+            <button onclick="displayNum(7)">7</button>
+            <button onclick="displayNum('*')">*</button>
+        </div>
+
+        <div class="buttons1">
+            <button onclick="displayNum(6)">6</button>
+            <button onclick="displayNum(5)">5</button>
+            <button onclick="displayNum(4)">4</button>
+            <button onclick="displayNum('+')">+</button>
+        </div>
+
+        <div class="buttons1">
+            <button onclick="displayNum(3)">3</button>
+            <button onclick="displayNum(2)">2</button>
+            <button onclick="displayNum(1)">1</button>
+            <button onclick="displayNum('-')">-</button>
+        </div>
+
+        <div class="buttons12">
+            <button onclick="displayNum(0)">0</button>
+            <button onclick="displayNum('00')">00</button>
+            <button id="eql" onclick="getAns()">=</button>
+            
+        </div>
+    </div>
+</div>
+    
+
+</body>
+</html>
